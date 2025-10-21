@@ -1,0 +1,11 @@
+:root{--fba-blue:#0B5ED7;--fba-blue-ink:#0A3F9C;--bg:#f6f8fb;--ink:#0f172a;--muted:#64748b;--card:#fff;--radius:16px}
+body{background:var(--bg);color:var(--ink)}
+.navbar{border-bottom:1px solid rgba(2,6,23,.06)}
+.bg-gradient-primary{background:linear-gradient(100deg,var(--fba-blue-ink),var(--fba-blue))}
+.card{border-radius:var(--radius);border:1px solid rgba(2,6,23,.06);box-shadow:0 14px 30px rgba(2,6,23,.08)}
+.card-hover{transition:transform .12s ease,box-shadow .12s ease}
+.card-hover:hover{transform:translateY(-2px);box-shadow:0 22px 40px rgba(2,6,23,.1)!important}
+.btn-primary{background-color:var(--fba-blue);border-color:var(--fba-blue)}
+.btn-outline-primary{color:var(--fba-blue);border-color:var(--fba-blue)}
+.badge{border-radius:999px}
+.table td,.table th{vertical-align:middle}
