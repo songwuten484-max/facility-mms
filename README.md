@@ -67,16 +67,16 @@
 
 ---
 
-## 🧭 โครงสร้างโปรเจกต์
+## 🧭 โครงสร้างโปรเจกต์ <br>
 
-facility-mms/
-├── inc/ # Config, DB connection, Helper functions
-├── public/ # หน้า UI สำหรับผู้ใช้งานทั่วไป
-├── admin/ # ส่วนจัดการของผู้ดูแลระบบ
-├── assets/ # CSS, JS, รูปภาพ
-├── docs/ # Screenshot, คู่มือประกอบ
-├── db/ # ไฟล์ฐานข้อมูล (.sql)
-└── README.md
+facility-mms/ <br>
+├── inc/ # Config, DB connection, Helper functions <br>
+├── public/ # หน้า UI สำหรับผู้ใช้งานทั่วไป <br>
+├── admin/ # ส่วนจัดการของผู้ดูแลระบบ <br>
+├── assets/ # CSS, JS, รูปภาพ <br>
+├── docs/ # Screenshot, คู่มือประกอบ <br>
+├── db/ # ไฟล์ฐานข้อมูล (.sql) <br>
+└── README.md <br>
 
 ## 🚀 วิธีติดตั้ง
 
@@ -93,19 +93,19 @@ Import ไฟล์ db/facility_mms.sql
 3. เปิดระบบผ่านเบราว์เซอร์ http://localhost/facility-mms/public/
    
 👩‍💻 ผู้พัฒนา
-Oat — วิศวกรไฟฟ้า / โปรแกรมเมอร์ คณะบริหารธุรกิจ มจพ. ระยอง
-💼 Full-stack Developer (PHP, MySQL, Bootstrap)
-⚙️ Electrical Engineer & System Integrator
-💡 สนใจ Business Systems, SaaS, Automation
-📧 ติดต่อผ่าน LINE OA หรืออีเมล
+Oat — วิศวกรไฟฟ้า / โปรแกรมเมอร์ คณะบริหารธุรกิจ มจพ. ระยอง <br>
+💼 Full-stack Developer (PHP, MySQL, Bootstrap) <br>
+⚙️ Electrical Engineer & System Integrator <br>
+💡 สนใจ Business Systems, SaaS, Automation <br>
+📧 ติดต่อผ่าน LINE OA หรืออีเมล <br>
 
-📄 License
-Distributed under the MIT License.
-See LICENSE for more information.
+📄 License <br>
+Distributed under the MIT License. <br>
+See LICENSE for more information. <br>
 
-💬 หมายเหตุเพิ่มเติม
-ระบบนี้ออกแบบให้ปรับแต่งได้ตามองค์กร
-รองรับการต่อยอดเป็น SaaS สำหรับหน่วยงาน, โรงเรียน, โรงงาน หรือมหาวิทยาลัย
+💬 หมายเหตุเพิ่มเติม <br>
+ระบบนี้ออกแบบให้ปรับแต่งได้ตามองค์กร <br>
+รองรับการต่อยอดเป็น SaaS สำหรับหน่วยงาน, โรงเรียน, โรงงาน หรือมหาวิทยาลัย <br>
 
-⭐ ถ้าชอบระบบนี้
+⭐ ถ้าชอบระบบนี้ <br>
 กด ⭐ ที่ repo เพื่อเป็นกำลังใจให้ผู้พัฒนา ❤️
