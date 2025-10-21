@@ -74,20 +74,20 @@ if (!defined('BRAND_NAME_EN')) define('BRAND_NAME_EN', 'FBA Facilities & Vehicle
 /* -------------------- DATABASE -------------------- */
 if (!defined('DB_HOST'))    define('DB_HOST',    getenv('DB_HOST')    ?: '127.0.0.1');
 if (!defined('DB_NAME'))    define('DB_NAME',    getenv('DB_NAME')    ?: 'fba-facility-mms');
-if (!defined('DB_USER'))    define('DB_USER',    getenv('DB_USER')    ?: 'fba-facility-mms');
-if (!defined('DB_PASS'))    define('DB_PASS',    getenv('DB_PASS')    ?: 'gnH!#987*'); // <- เปลี่ยน!
+if (!defined('DB_USER'))    define('DB_USER',    getenv('DB_USER')    ?: 'root');
+if (!defined('DB_PASS'))    define('DB_PASS',    getenv('DB_PASS')    ?: ''); // <- เปลี่ยน!
 if (!defined('DB_CHARSET')) define('DB_CHARSET', 'utf8mb4');
 
 /* -------------------- LINE (ดึงจาก ENV เป็นหลัก) -------------------- */
 // Messaging API token
 if (!defined('LINE_CHANNEL_TOKEN')) {
-  define('LINE_CHANNEL_TOKEN', getenv('LINE_CHANNEL_TOKEN') ?: 'P1zDxMiy2JUi9k1bIfoTLYSSQWOGNjPsgNWyFr1wl4RrsQKJpJEP/UcgdrQQrliGj35RgrL2cVbBMrza5UsGZbaV6W9mP1yNzOqmg3XIlcM40jemFyDRyCI6S3MY5mLJuHTVBMjfCvd7QKEyGRgHPAdB04t89/1O/w1cDnyilFU=');
+  define('LINE_CHANNEL_TOKEN', getenv('LINE_CHANNEL_TOKEN') ?: '');
 }
 // LINE Login / LIFF
-if (!defined('LINE_LOGIN_CHANNEL_ID'))     define('LINE_LOGIN_CHANNEL_ID',     getenv('LINE_LOGIN_CHANNEL_ID')     ?: '2008299648');
-if (!defined('LINE_LOGIN_CHANNEL_SECRET')) define('LINE_LOGIN_CHANNEL_SECRET', getenv('LINE_LOGIN_CHANNEL_SECRET') ?: '4c0ac4d122bee04a9fadb0667a3cb2b2');
-if (!defined('LINE_LIFF_ID'))              define('LINE_LIFF_ID',              getenv('LINE_LIFF_ID')              ?: '2008299648-M3eLqdyq');
-if (!defined('LINE_ADD_FRIEND_URL'))       define('LINE_ADD_FRIEND_URL',       getenv('LINE_ADD_FRIEND_URL')       ?: 'https://lin.ee/9cUpMts'); // OA add friend (optional)
+if (!defined('LINE_LOGIN_CHANNEL_ID'))     define('LINE_LOGIN_CHANNEL_ID',     getenv('LINE_LOGIN_CHANNEL_ID')     ?: '');
+if (!defined('LINE_LOGIN_CHANNEL_SECRET')) define('LINE_LOGIN_CHANNEL_SECRET', getenv('LINE_LOGIN_CHANNEL_SECRET') ?: '');
+if (!defined('LINE_LIFF_ID'))              define('LINE_LIFF_ID',              getenv('LINE_LIFF_ID')              ?: '');
+if (!defined('LINE_ADD_FRIEND_URL'))       define('LINE_ADD_FRIEND_URL',       getenv('LINE_ADD_FRIEND_URL')       ?: ''); // OA add friend (optional)
 
 
 
@@ -100,9 +100,9 @@ define('SSO_AUTH_URL',  'https://sso.kmutnb.ac.th/auth/authorize');
 define('SSO_TOKEN_URL', 'https://sso.kmutnb.ac.th/auth/token');
 define('SSO_USER_URL',  'https://sso.kmutnb.ac.th/resources/userinfo');
 
-define('SSO_CLIENT_ID',     'XIUzkghdE5ojn7uKiYEm78GDFWK8kwGZ');  // ต้องตรงกับใน Developer Console
-define('SSO_CLIENT_SECRET', 'YCnFTBdtaCYjLgk8A0t9lm7so0JH6RvqReJTX60BLA0K4yEAgb2w1uq6MRE9rc5a');
-define('SSO_REDIRECT_URI',  'https://roombooking.fba.kmutnb.ac.th/fba-facility-mms/modules/auth/callback.php');
+define('SSO_CLIENT_ID',     '');  // ต้องตรงกับใน Developer Console
+define('SSO_CLIENT_SECRET', '');
+define('SSO_REDIRECT_URI',  '');
 
 
 
@@ -112,7 +112,7 @@ define('SSO_REDIRECT_URI',  'https://roombooking.fba.kmutnb.ac.th/fba-facility-m
 /**
  * ที่สำคัญ: ทำให้ Redirect URI เป็น **absolute URL** เสมอ
  * ตัวอย่างผลลัพธ์:
- *   https://roombooking.fba.kmutnb.ac.th/fba-facility-mms/modules/auth/callback.php
+ *   
  */
 $defaultRedirect = $APP_URL . '/modules/auth/callback.php';
 if (!defined('SSO_REDIRECT_URI')) {
